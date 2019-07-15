@@ -1,0 +1,33 @@
+{
+    "name": "matu/response",
+    "description": "码途接口数据返回",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lost in you",
+            "email": "954630688@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Matu\\Response\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7",
+        "league/fractal": "^0.18.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.x.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Matu\\Response\\ResponseServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
